@@ -1,0 +1,30 @@
+.aboutContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    text-align: left;
+}
+
+.element1 {
+    grid-column: 1/3;
+    text-align: left;
+    padding: 1.3rem 1rem;
+    border-bottom: 1px solid #ccc;
+    border-image: linear-gradient(90deg, transparent, #CCC, transparent) 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    p::first-letter {
+        color: orangered;
+    }
+}
+
+.element2 {
+    padding: 0.5rem;
+    border-right: 1px solid #ccc;
+    border-image: linear-gradient(#CCC, transparent) 1;
+}
+
+.element3 {
+    padding: 0.5rem;
+}

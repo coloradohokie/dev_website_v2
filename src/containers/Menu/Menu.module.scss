@@ -1,0 +1,16 @@
+.menu {
+    margin: 1rem;
+
+    ul {
+        background-color: white;
+        list-style-type: none; 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        max-width: 25rem;
+        border-radius: 5px;
+    }
+
+}
+
+
