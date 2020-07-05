@@ -5,17 +5,18 @@ const about = () => (
     <div className="main-container">
         <div className={classes.aboutContainer}>
             <div className={classes.element1}>
-                <p>About Me</p>
+                <div className="circle"></div>
+                <h1>About Me</h1>
             </div>
             <div className={classes.element2}>
                 <p>I am Michael Newman, a full stack web developer from Denver, Colorado.</p>
             </div>
             <div className={classes.element3}>
                 <ul>
-                    <li>Age: 43</li>
-                    <li>Residence: USA</li>
-                    <li>Freelance: Available</li>
-                    <li>Address: Denver, CO</li>
+                    <li><span className={classes.badge}>Age: . . . . . </span> 43</li>
+                    <li><span className={classes.badge}>Residence: . . . . . </span> USA</li>
+                    <li><span className={classes.badge}>Freelance: . . . . . </span> Available</li>
+                    <li><span className={classes.badge}>Address: . . . . . </span> Denver, CO</li>
                 </ul>
             </div>
         </div>

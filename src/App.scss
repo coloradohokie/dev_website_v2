@@ -61,14 +61,40 @@ body {
 
 h1 {
     font-size: 1.4rem;
-    text-transform: uppercase;
-    
+    color: #333;
+    position: relative;
+    left: -1rem;
 }
 
 h2 {
     font-size: 1rem;
     text-transform: uppercase;
     color: green;
+    border-bottom: 1px solid #ccc;
+    border-image: linear-gradient(90deg, transparent, #ccc, transparent) 1;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 0.05rem;
+}
+
+h4 {
+    color: #AAA;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+
+}
+
+p {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 1rem;
 }
 
 
@@ -174,10 +200,46 @@ h2 {
     }
 }
 
-
-.list-of-works {
-    display: grid;
-
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-image: linear-gradient(60deg, hsla(34, 100, 50, 0.5), transparent);
+    border-radius: 50%;
 }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    text-align: left;
+}
+
+.element1 {
+    grid-column: 1/3;
+    text-align: left;
+    padding: 1.3rem 1rem;
+    border-bottom: 1px solid #ccc;
+    border-image: linear-gradient(90deg, transparent, #CCC, transparent) 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    p::first-letter {
+        color: orangered;
+    }
+}
+
+.element2 {
+    padding: 0.5rem;
+    border-right: 1px solid #ccc;
+    border-image: linear-gradient(#CCC, transparent) 1;
+}
+
+.element3 {
+    padding: 0.5rem;
+}
+
 
 
