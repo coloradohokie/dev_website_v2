@@ -1,0 +1,15 @@
+.experience {
+    border-bottom: 1px solid #ccc;
+    border-image: linear-gradient(90deg, transparent, #ccc, transparent) 1;
+}
+
+.badge {
+    background-color: white;
+    color: #AAA;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.15rem;
+    display: inline-block;
+}

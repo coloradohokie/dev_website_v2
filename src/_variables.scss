@@ -1,0 +1,13 @@
+$main-color1: #521571;
+$box-shadow-color: hsla(34, 100, 50, 0.4);
+$circle-color: hsla(280, 69, 26, 0.5);
+// $circle-color: hsla(34, 100, 50, 0.5);
+
+$gray1: #CCC;
+$gray2: #AAA;
+$gray3: #666;
+$gray4: #333;
+
+
+$hline: linear-gradient(90deg, transparent, $gray1, transparent) 1;
+$vline: linear-gradient($gray1, transparent) 1;

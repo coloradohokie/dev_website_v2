@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .aboutContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,7 +45,7 @@
 }
 
 .badge {
-    background-color: orange;
+    background-color: $main-color1;
     color: white;
     border-radius: 2px;
     font-size: 0.8rem;
