@@ -15,13 +15,13 @@ const works = () => (
                 <h1>Works</h1>
             </div>
             <div className="element2">
-                <WorkPiece title="Engineering Project Manager" subtitle="Ruby, React, HTML, CSS" imageUrl={code1}  />
-                <WorkPiece title="Historical Marker" subtitle="Java, Android, Ruby" imageUrl={code2} />
+                <WorkPiece title="Engineering Project Manager" subtitle="Ruby, React, HTML, CSS" imageUrl={code1} imageDescription="stock image"  />
+                <WorkPiece title="Historical Marker" subtitle="Java, Android, Ruby" imageUrl={code2} imageDescription="stock image" />
             </div>
             <div className="element3">
-                <WorkPiece title="MichaelNewman.dev" subtitle="React, HTML, SCSS" imageUrl={dev_website} />
-                <WorkPiece title="Let's Ride" subtitle="Ruby, JavaScript, HTML, CSS" imageUrl={code3} />
-                <WorkPiece title="Route Finder" subtitle="Ruby, JavaScript, HTML, CSS" imageUrl={code4} />
+                <WorkPiece title="MichaelNewman.dev" subtitle="React, HTML, SCSS" imageUrl={dev_website} imageDescription="stock image" />
+                <WorkPiece title="Let's Ride" subtitle="Ruby, JavaScript, HTML, CSS" imageUrl={code3} imageDescription="stock image" />
+                <WorkPiece title="Route Finder" subtitle="Ruby, JavaScript, HTML, CSS" imageUrl={code4} imageDescription="stock image" />
             </div>
         </div>
     </div>

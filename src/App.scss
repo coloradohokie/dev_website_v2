@@ -249,4 +249,8 @@ p {
 }
 
 
-
+@media (min-width: 700px) {
+    .App {
+        flex-direction: row;
+    }
+}

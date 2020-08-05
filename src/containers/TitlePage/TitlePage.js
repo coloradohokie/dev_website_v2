@@ -5,7 +5,7 @@ import profile from '../../assets/profile/profile.jpg'
 const about = () => (
     <div className="main-container">
         <div id="background">
-            <img id="profile-photo" src={profile} alt="profile image" />
+            <img id="profile-photo" src={profile} alt="profile" />
             <div className="bottom-edge">
                 <div id="triangle-bottomleft"></div>
                 <div id="triangle-bottomright"></div>
@@ -19,8 +19,8 @@ const about = () => (
             <li><SocialMedia name="Blog" icon="fas fa-blog" url="https://www.linkedin.com" /></li>
         </ul>
         <div className="buttons">
-            <button>Resume <i class="fas fa-download"></i></button>
-            <button>Contact <i class="fas fa-at"></i></button>
+            <button>Resume <i className="fas fa-download"></i></button>
+            <button>Contact <i className="fas fa-at"></i></button>
         </div>
     </div>
 )

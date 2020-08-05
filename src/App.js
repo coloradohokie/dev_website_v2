@@ -5,6 +5,7 @@ import About from './containers/About/About'
 import Resume from './containers/Resume/Resume'
 import Blog from './containers/Blog/Blog'
 import Works from './containers/Works/Works'
+import Contact from './containers/Contact/Contact'
 import './App.scss';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Resume />
       <Works />
       <Blog />
+      <Contact />
     </div>
   );
 }

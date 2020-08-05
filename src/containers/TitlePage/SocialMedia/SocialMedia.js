@@ -2,7 +2,7 @@ import React from 'react'
 
 const socialMedia = (props) => (
     <div>
-        <i class={props.icon}></i>
+        <i className={props.icon}></i>
     </div>
 )
 

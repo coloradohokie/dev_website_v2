@@ -4,6 +4,7 @@ This website is coded entirely in Reactjs, SCSS, and HTML and is intended to sho
 
 ## React
 * Router
+* Module Based CSS/SCSS
 
 ## CSS
 * Grid
@@ -18,6 +19,6 @@ This website is coded entirely in Reactjs, SCSS, and HTML and is intended to sho
 * Variables
 * Nested Selectors
 
-The original design that I based this website off of can be found here:
+The original design that I based this website off of can be found here: https://bslthemes.com/ryan/demo/index-new-bg-image.html
 
 
