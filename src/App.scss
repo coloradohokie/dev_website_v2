@@ -56,10 +56,21 @@ body {
 .App {
     text-align: left;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+
+    @media(min-width: $landscape-width) {
+        // flex-direction: row;
+        // justify-content: flex-start;
+        margin: auto;
+        width: 80%;
+        max-width: 1200px;
+        padding: 70px 0;
+
+
+    }
   }
 
 
@@ -113,6 +124,15 @@ p {
     border-radius: 5px;
     width: 400px;
     margin: 1rem;
+
+    @media (min-width: $landscape-width) {
+        margin-right: 0;
+        padding-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+        // max-width: 800px;
+    }
     
 }
 
@@ -246,11 +266,4 @@ p {
 
 .element3 {
     padding: 0.5rem;
-}
-
-
-@media (min-width: 700px) {
-    .App {
-        flex-direction: row;
-    }
 }

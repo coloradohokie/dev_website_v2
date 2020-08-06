@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .menu {
     margin: 1rem;
 
@@ -9,6 +11,18 @@
         justify-content: flex-start;
         max-width: 25rem;
         border-radius: 5px;
+    }
+
+}
+
+@media (min-width: $landscape-width) {
+    .menu {
+
+
+        ul {
+            flex-direction: column;
+            width: 5rem;
+        }
     }
 
 }
