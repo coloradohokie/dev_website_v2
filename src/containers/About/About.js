@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './About.module.scss'
+import AboutText from './AboutMeText.js'
+import StatLabels from '../UI/StatLabels/StatLabels'
 
 const about = (props) => {
     let attachedClasses = ["main-container"]
@@ -8,6 +10,12 @@ const about = (props) => {
     } else {
         attachedClasses.push("hidden-card")
     }
+
+    const stats = [
+        ["Location", "Denver, CO"],
+        ["IT Experience", "18 Years"],
+        ["Released Projects", "5"]
+    ]
 
     return (
         <div className={attachedClasses.join(' ')}>
@@ -18,15 +26,10 @@ const about = (props) => {
                     <h1>About Me</h1>
                 </div>
                 <div className={classes.element2}>
-                    <p>I am Michael Newman, a full stack web developer from Denver, Colorado.</p>
+                    {AboutText.map(paragraph => (<p>{paragraph}</p>))}
                 </div>
                 <div className={classes.element3}>
-                    <ul>
-                        <li><span className={classes.badge}>Age: . . . . . </span> 43</li>
-                        <li><span className={classes.badge}>Residence: . . . . . </span> USA</li>
-                        <li><span className={classes.badge}>Freelance: . . . . . </span> Available</li>
-                        <li><span className={classes.badge}>Address: . . . . . </span> Denver, CO</li>
-                    </ul>
+                    <StatLabels stats={stats} />
                 </div>
             </div>
         </div>
