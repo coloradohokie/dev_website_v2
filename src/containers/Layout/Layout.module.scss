@@ -1,26 +1,29 @@
 @import '../../variables';
 
-.MenuContainer {
-    color: red;
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
 }
+
+// .MenuContainer {
+//     position: fixed;
+//     top: 0;
+//     left: 8rem;
+// }
 
 
 @media (min-width: $landscape-width) {
 
-
     .MainContainer {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        
     }
 
-    .MenuContainer {
-        // position: fixed;
-        // top: 3rem;
-        // left: 0;
-    }
+    // .MenuContainer {
+    // }
 
     .TitlePageContainer {
         // position: fixed;
@@ -35,7 +38,8 @@
         margin-left: -2px;
         border-radius: 4px;
         width: 600px;
-        height: 450px;
+        max-height: 450px;
+
         // overflow-y: auto;
         overflow: hidden;
 

@@ -2,7 +2,7 @@ import React from 'react'
 import emailjs from 'emailjs-com'
 import classes from './Contact.module.scss'
 
-const contact = () => {
+const contact = (props) => {
 
     function sendEmail(e) {
         e.preventDefault();
@@ -15,8 +15,16 @@ const contact = () => {
             });
     }
 
+    let attachedClasses = ["main-container"]
+    if (props.active) { 
+        attachedClasses.push("active-card")
+    } else {
+        attachedClasses.push("hidden-card")
+    }
+
     return (
-        <div className="main-container">
+        <div className={attachedClasses.join(' ')}>
+            <a name="contact" />
             <div className={classes.contactContainer}>
                 <div className={classes.titleBar}>
                     <div className="circle"></div>

@@ -24,8 +24,17 @@ class Blog extends Component {
         const posts = this.state.entries.map(entry => {
             return <Entries key={entry.id} title={entry.title} date={entry.published}>{entry.content}</Entries>
         })
+
+        let attachedClasses = ["main-container"]
+        if (this.props.active) { 
+            attachedClasses.push("active-card")
+        } else {
+            attachedClasses.push("hidden-card")
+        }
+
         return (
-            <div className="main-container">
+            <div className={attachedClasses.join(' ')}>
+                <a name="blog" />
                 <div className={classes.blogContainer}>
                     <div className={classes.element1}>
                         <div className="circle"></div>

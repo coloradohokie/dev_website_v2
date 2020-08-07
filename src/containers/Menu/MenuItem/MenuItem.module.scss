@@ -1,3 +1,5 @@
+@import '../../../variables';
+
 .menuItem {
     border-left: 1px solid #ccc ;
     border-image: linear-gradient(transparent, #ccc , transparent) 1;
@@ -10,7 +12,8 @@
     margin:0;
     text-transform: uppercase;
     font-size: 0.8rem;
-    color: #333;
+    cursor: pointer;
+    text-decoration: none;
     
     .menuIcon {
         font-size: 1.4rem;
@@ -19,5 +22,26 @@
 
     p {
         padding: 0;
+        color: inherit;
+        text-decoration: none;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    @media (min-width: $landscape-width) {
+        border-left: none;
+        border-bottom: 1px solid $gray1;
+        border-image: $hline;
+    }
+}
+
+.activeIcon {
+    color: $main-color1;
+}
+
+.inactiveIcon {
+    color: $gray4;
 }

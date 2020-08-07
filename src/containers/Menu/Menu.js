@@ -1,27 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import MenuItem from './MenuItem/MenuItem'
 import classes from './Menu.module.scss'
 
-const menu = () => (
-    <nav className={classes.menu}>
-        <ul>
-            <li>
-                <MenuItem name="About" icon="fas fa-user" />
-            </li>
-            <li>
-                <MenuItem name="Resume" icon="fas fa-file-alt" />
-            </li>
-            <li>
-                <MenuItem name="Works" icon="fas fa-code" />
-            </li>
-            <li>
-                <MenuItem name="Blog" icon="fas fa-blog" />
-            </li>
-            <li>
-                <MenuItem name="Contact" icon="fas fa-at" />
-            </li>
-        </ul>
-    </nav>
-)
+const menu = (props) => {
+    function showMenuItems () {
+        let menuItems = props.menu.map(el => {
+                if (el.name === props.activeIcon) {
+                    return (
+                        <li key={el.name}>
+                            <MenuItem
+                                name={el.name} 
+                                icon={el.icon} 
+                                active
+                                clicked={() => props.clicked(el.name)}
+                                />
+                        </li>                
+                    )
+                }
+            
+    
+                return (
+                    <li key={el.name}>
+                        <MenuItem
+                            name={el.name} 
+                            icon={el.icon} 
+                            clicked={() => props.clicked(el.name)}
+                            />
+                    </li>
+                )
+            })
+        return menuItems
+    }
+    
+
+
+    return(
+        <nav className={classes.menu}>
+            <ul>
+                {showMenuItems()}
+            </ul>
+        </nav>
+    )
+}
 
 export default menu
