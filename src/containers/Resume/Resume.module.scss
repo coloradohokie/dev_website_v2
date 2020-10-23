@@ -3,6 +3,14 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     text-align: left;
+    
+    ul {
+        padding: 0.8rem 0;
+    }
+    
+    li {
+        padding: 0.2rem 2rem;
+    }
 }
 
 .element1 {
@@ -30,5 +38,13 @@
 
 .element3 {
     padding: 0.5rem;
+}
+
+.element4 {
+    grid-column: 1/3;
+
+    .knowledgeList {
+        display: flex;
+    }
 }
 
