@@ -1,6 +1,10 @@
 .experience {
     border-bottom: 1px solid #ccc;
     border-image: linear-gradient(90deg, transparent, #ccc, transparent) 1;
+
+    h3 {
+        padding-top: 0.6rem;
+    }
 }
 
 .badge {
@@ -9,7 +13,7 @@
     border: 1px solid #AAA;
     border-radius: 2px;
     font-size: 0.8rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
     padding: 0.15rem;
     display: inline-block;
 }

@@ -15,14 +15,14 @@ const titlePage = () => (
         <p id={classes.name}>Michael Newman</p>
         <p id={classes.title}>Full Stack Web Developer</p>
         <ul className={classes.socialMedia}>
-            <li><SocialMedia name="GitHub" icon="fab fa-github" url="https://www.github.com" /></li>
-            <li><SocialMedia name="Linked In" icon="fab fa-linkedin" url="https://www.linkedin.com" /></li>
-            <li><SocialMedia name="Blog" icon="fas fa-blog" url="https://www.linkedin.com" /></li>
+            <li><SocialMedia name="GitHub" icon="fab fa-github" url="https://github.com/coloradohokie" /></li>
+            <li><SocialMedia name="Linked In" icon="fab fa-linkedin" url="https://www.linkedin.com/in/michael-newman-denver/" /></li>
+            <li><SocialMedia name="Blog" icon="fas fa-blog" url="https://blog.michaelnewman.dev/" /></li>
         </ul>
-        <div className={classes.buttons}>
+        {/* <div className={classes.buttons}>
             <button>Resume <i className="fas fa-download"></i></button>
             <button>Contact <i className="fas fa-at"></i></button>
-        </div>
+        </div> */}
     </div>
 )
 

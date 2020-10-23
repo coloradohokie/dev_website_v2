@@ -2,7 +2,9 @@ import React from 'react'
 
 const socialMedia = (props) => (
     <div>
-        <i className={props.icon}></i>
+        <a href={props.url}>
+            <i className={props.icon}></i>
+        </a>
     </div>
 )
 

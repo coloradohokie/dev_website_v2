@@ -14,7 +14,7 @@ const about = (props) => {
     const stats = [
         ["Location", "Denver, CO"],
         ["IT Experience", "18 Years"],
-        ["Released Projects", "5"]
+        ["Released Projects", "4"]
     ]
 
     return (
